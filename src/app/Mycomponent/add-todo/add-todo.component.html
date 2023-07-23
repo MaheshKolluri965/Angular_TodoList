@@ -1,0 +1,17 @@
+<!--Form from Bootstrap-->
+<div class="container">
+    <h2 class="text-center">Add Todo</h2>
+    <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="todotitle" class="form-label">Todo Title</label>
+      <input type="text" class="form-control" [(ngModel)]="title" id="title" name="title">
+      <div id="title" class="form-text">Add your Todo list from here.</div>
+    </div>
+    <div class="mb-3">
+      <label for="tododescription" class="form-label">Description</label>
+      <input type="text" class="form-control" [(ngModel)]="description" id="descrip" name="description">
+    </div>
+    <button type="submit" class="btn btn-sm btn-primary">Add</button>
+    </form>
+</div>
+
